@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <form id="loginForm">
+            <label for="loginID">Login ID</label>
+            <input type="text" id="loginID" name="loginID" required>
+            <span id="errorLoginID" class="error-message"></span>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- The actual button will be hidden, and we'll position the background image to look like a button -->
+            <button type="submit" id="hiddenButton">Login</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
